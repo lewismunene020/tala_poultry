@@ -11,6 +11,6 @@ error_reporting(E_ALL);
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>eCom Store Admin Panel</title>
     <link rel="stylesheet" href="css/bootstrap-337.min.css">
-    <link rel="stylesheet" href="font-awsome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
