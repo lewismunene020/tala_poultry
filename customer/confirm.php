@@ -90,8 +90,8 @@ else{
                
                <a href="../index.php" class="navbar-brand home"><!-- navbar-brand home Begin -->
                    
-                   <img src="images/ecom-store-logo.png" alt="eCom-Store Logo" class="hidden-xs">
-                   <img src="images/ecom-store-logo-mobile.png" alt="eCom-Store Logo Mobile" class="visible-xs">
+                   <img src="images/logo.jpeg" alt="eCom-Store Logo" class="hidden-xs">
+                   <img src="images/logo.jpeg" alt="eCom-Store Logo Mobile" class="visible-xs">
                    
                </a><!-- navbar-brand home Finish -->
                
