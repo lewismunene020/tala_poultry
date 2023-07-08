@@ -142,17 +142,17 @@
             <li><!-- li begin -->
                 <a href="#" data-toggle="collapse" data-target="#cat"><!-- a href begin -->
                         
-                        <i class="fa fa-fw fa-book"></i> Categories
+                        <i class="fa fa-fw fa-book"></i> Sub Categories
                         <i class="fa fa-fw fa-caret-down"></i>
                         
                 </a><!-- a href finish -->
                 
                 <ul id="cat" class="collapse"><!-- collapse begin -->
                     <li><!-- li begin -->
-                        <a href="index.php?insert_cat"> Insert Category </a>
+                        <a href="index.php?insert_cat"> Insert Sub Category </a>
                     </li><!-- li finish -->
                     <li><!-- li begin -->
-                        <a href="index.php?view_cats"> View Categories </a>
+                        <a href="index.php?view_cats"> View Sub Categories </a>
                     </li><!-- li finish -->
                 </ul><!-- collapse finish -->
                 

@@ -46,7 +46,7 @@ include("includes/header.php");
                          <th colspan="2">Product</th>
                          <th>Quantity</th>
                          <th>Unit Price</th>
-                         <th>Size</th>
+                         
                          <th colspan="1">Delete</th>
                          <th colspan="2">Sub-Total</th>
                        </tr>
@@ -57,7 +57,7 @@ include("includes/header.php");
                       $total = 0;
                       while ($row_cart = mysqli_fetch_array($run_cart)) {
                         $pro_id = $row_cart['p_id'];
-                        $pro_size = $row_cart['size'];
+                        //$pro_size = $row_cart['size'];
                         $pro_qty = $row_cart['qty'];
                         $get_products = "select * from products where product_id='$pro_id'";
                         $run_products = mysqli_query($con,$get_products);
@@ -73,7 +73,7 @@ include("includes/header.php");
                          <td><a href="details.php?pro_id=<?php echo $pro_id; ?>"><?php echo $product_title; ?></a></td>
                          <td><?php echo $pro_qty; ?></td>
                          <td><?php echo $only_price; ?></td>
-                         <td><?php echo $pro_size; ?></td>
+                         
                          <td><input type="checkbox" name="remove[]" value="<?php echo $pro_id; ?>"></td>
                          <td>KES<?php echo $sub_total; ?></td>
                        </tr>

@@ -84,8 +84,8 @@
 				<h4>Find Us:</h4>
 
 				<p>
-					<strong>eCom Store</strong>
-					<br />Gate C Road,
+					<strong>Tala Poultry Farmers</strong>
+					<br />Kenyatta Road,
 					<br />Juja,
 					<br />Kiambu,
 					<br />Kenya.
@@ -124,7 +124,7 @@
 		<!-- container Begin -->
 
 		<div class="col-md-6">
-			<p class="pull-left">&copy; 2022 eCom Store. All Rights Reserved.</p>
+			<p class="pull-left">&copy; 2023 Tala Poultry Farmers. All Rights Reserved.</p>
 		</div>
 
 	</div><!-- container Begin -->

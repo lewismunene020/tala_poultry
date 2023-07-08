@@ -16,14 +16,14 @@ $run_cart = mysqli_query($con, $select_cart);
 while ($row_cart = mysqli_fetch_array($run_cart)) {
 	$pro_id = $row_cart['p_id'];
 	$pro_qty = $row_cart['qty'];
-	$pro_size = $row_cart['size'];
+	//$pro_size = $row_cart['size'];
 	$get_products = "select * from products where product_id='$pro_id'";
 	$run_products = mysqli_query($con, $get_products);
 
 	while ($row_products = mysqli_fetch_array($run_products)) {
 		$sub_total = $row_products['product_price'] * $pro_qty;
 		$product_name = $row_products['product_title'];
-		$insert_customer_order = "insert into customer_orders(customer_id,due_amount,invoice_no,product_id,product_name,qty,size,order_date,order_status) values('$customer_id','$sub_total','$invoice_no','$pro_id','$product_name','$pro_qty','$pro_size',NOW(),'$status')";
+		$insert_customer_order = "insert into customer_orders(customer_id,due_amount,invoice_no,product_id,product_name,qty,order_date,order_status) values('$customer_id','$sub_total','$invoice_no','$pro_id','$product_name','$pro_qty',NOW(),'$status')";
 		$run_customer_order = mysqli_query($con, $insert_customer_order);
 		if (!$run_customer_order) {
 			echo ("Error description: " . mysqli_error($con));

@@ -81,12 +81,12 @@
                <h4>Find Us:</h4>
 
                <p>
-			   <strong>eCom Store</strong>
-                    <br/>8 Pavillion Way,
-                    <br/>Loughborough,
-                    <br/>Leicestershire,
-                    <br/>LE11 5GW.
-               </p>
+					<strong>Tala Poultry Farmers</strong>
+					<br />Kenyatta Road,
+					<br />Juja,
+					<br />Kiambu,
+					<br />Kenya.
+				</p>
 
                <a href="../contact.php">Contact Page</a>
 
@@ -143,7 +143,7 @@
 	<div class="container"><!-- container Begin -->
 		
 		<div class="col-md-6">
-		<p class="pull-left">&copy; 2022 eCom Store. All Rights Reserved.</p>
+		<p class="pull-left">&copy; 2023 Tala Poultry Farmers. All Rights Reserved.</p>
 		</div>
 
 	</div><!-- container Begin -->

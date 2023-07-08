@@ -187,7 +187,7 @@ function getpcatpro(){
 		{
 			echo "
 			<div class='box'>
-			<h1>No Product Found In This Product Categories</h1>
+			<h1>No Product Found In This Product Category</h1>
 			</div>
 			";
 		}

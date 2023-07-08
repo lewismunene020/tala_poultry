@@ -83,34 +83,13 @@
                                    <label for="" class="col-md-5 control-label">Products Quantity</label>
                                    
                                    <div class="col-md-7"><!-- col-md-7 Begin -->
-                                          <select name="product_qty" id="" class="form-control"><!-- select Begin -->
-                                           <option>1</option>
-                                           <option>2</option>
-                                           <option>3</option>
-                                           <option>4</option>
-                                           <option>5</option>
-                                           </select><!-- select Finish -->
+                                          <input name="product_qty" id="" class="form-control" type="number"/>
                                    
                                     </div><!-- col-md-7 Finish -->
                                    
                                </div><!-- form-group Finish -->
                                
-                               <div class="form-group"><!-- form-group Begin -->
-                                   <label class="col-md-5 control-label">Product Size</label>
-                                   
-                                   <div class="col-md-7"><!-- col-md-7 Begin -->
-                                       
-                                       <select name="product_size" class="form-control" required oninput="setCustomValidity('')" oninvalid="setCustomValidity('Must pick 1 size for the product')"><!-- form-control Begin -->
-                                          
-                                           <option value="" disabled selected>Select a Size</option>
-                                           <option value="Small">Small</option>
-                                           <option value="Medium">Medium</option>
-                                           <option value="Large">Large</option>
-                                           
-                                       </select><!-- form-control Finish -->
-                                       
-                                   </div><!-- col-md-7 Finish -->
-                               </div><!-- form-group Finish -->
+                              
                                
                                <p class="price">KES <?php echo $pro_price; ?></p>
                                
@@ -123,7 +102,7 @@
                                 //$pro_id=$row_products['product_id'];
 		                        $p_id = $product_id;
 		                        $product_qty = $_POST['product_qty'];
-		                        $product_size = $_POST['product_size'];
+		                        //$product_size = $_POST['product_size'];
 		                        $check_product = "select * from cart where ip_add='$ip_add' AND p_id='$p_id'";
 		                        $run_check = mysqli_query($con,$check_product);
 
@@ -132,7 +111,7 @@
 			                        echo "<script>window.open('details.php?pro_id=$p_id','_self')</script>";
 		                        }
 		                        else{
-			                        $query = "insert into cart(p_id,ip_add,qty,size,p_price)values('$p_id','$ip_add','$product_qty','$product_size','$pro_price')";
+			                        $query = "insert into cart(p_id,ip_add,qty,p_price)values('$p_id','$ip_add','$product_qty','$pro_price')";
 			                        if(!mysqli_query($con,$query)){
                                         echo("Error description: " . mysqli_error($con));
                                     }
@@ -181,13 +160,7 @@
                        
                    </p>
                    
-                       <h4>Size</h4>
                        
-                       <ul>
-                           <li>Small</li>
-                           <li>Medium</li>
-                           <li>Large</li>
-                       </ul>  
                        
                        <hr>
                    
