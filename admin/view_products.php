@@ -47,6 +47,7 @@
 								<th>Product Title:</th>
 								<th>Product Image:</th>
 								<th>Product Price:</th>
+								<th>Product Sold:</th>
 								<th>Product Keywords:</th>
 								<th>Product Date:</th>
 								<th>Product Delete:</th>
@@ -72,7 +73,17 @@
 							 	<td><?php echo $pro_id; ?></td>
 							 	<td><?php echo $pro_title; ?></td>
 							 	<td><img src="product_images/<?php echo $pro_img1; ?>" width="60" height="60"></td>
-							 	<td>KES<?php echo $pro_price; ?></td>
+							 	<td>£<?php echo $pro_price; ?></td>
+							 	<td>
+							 		<?php 
+
+							 			$get_sold = "select * from customer_orders where product_id='$pro_id'";
+							 			$run_sold = mysqli_query($con,$get_sold);
+							 			$count = mysqli_num_rows($run_sold);
+							 			echo $count;
+
+							 		?>
+							 	</td>
 							 	<td><?php echo $pro_keywords; ?></td>
 							 	<td><?php echo $pro_date; ?></td>
 							 	<td>

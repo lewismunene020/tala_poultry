@@ -79,7 +79,7 @@ ini_set('display_errors', 1);
                           
                           <select name="product_cat" class="form-control"><!-- form-control Begin -->
                               
-                              <option> Select a Product Category </option>
+                              <option> Select a Category Product </option>
                               
                               <?php 
                               
