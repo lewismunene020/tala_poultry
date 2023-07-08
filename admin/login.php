@@ -9,7 +9,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>eCom Store Admin Panel</title>
+    <title>Tala Poultry Admin Panel</title>
     <link rel="stylesheet" href="css/bootstrap-337.min.css">
     <link rel="stylesheet" href="font-awsome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -38,11 +38,11 @@ if (isset($_POST['admin_login'])) {
 	$count = mysqli_num_rows($run_admin);
 	if ($count==1) {
 		$_SESSION['admin_email'] = $admin_email;
-		echo "<script>alert('Logged In. Welcome Back')</script>";
-		echo "<script>window.open('index.php?view_products','_self')</script>";
+		// echo "<script>alert('Logged In. Welcome Back')</script>";
+		echo "<script>window.open('index.php?dashboard','_self')</script>";
 	}
 	else{
-		echo "<script>alert('Incorrect email or password!')</script>";
+		echo "<script>alert('Email or password is Wrong!!')</script>";
 	}
 }
 

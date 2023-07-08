@@ -32,7 +32,7 @@ body{
 /*  Top Navigation Styles  */
 
 .top-nav{
-    margin: 0 15px;
+    0 15px;
 }
 
 .top-nav>li{
@@ -147,6 +147,75 @@ body{
     color: #8d4341;
 }
 
+/*  Admin Profile Styling  */
+
+.panel-body{
+    border-radius: 5px;
+}
+
+.thumb-info{
+    position: relative;
+}
+
+.rounded{
+    border-radius: 10px;
+}
+
+hr{
+    border: 0;
+    height: 1px;
+    margin: 10px 0 10px 0;
+}
+
+hr.dotted{
+    border-bottom: 1px #dddddd dotted;
+    height: 0px;
+    margin: 10px 0 10px 0;
+}
+
+.thumb-info .thumb-info-title{
+    background: rgba(36,27,28,.9);
+    bottom: 10%;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    left: 0;
+    letter-spacing: -1px;
+    padding: 9px 11px 9px;
+    position: absolute;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+.thumb-info .thumb-info-inner{
+    display: block;
+}
+
+.thumb-info .thumb-info-type{
+    background: #0088cc;
+    display: inline-block;
+    border-radius: 2px;
+    float: left;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0;
+    margin: 8px -2px -15px -2px;
+    padding: 2px 9px;
+    text-transform: none;
+}
+
+.widget-context-expanded{
+    font-size: 15px;
+}
+
+.widget-context-expanded span{
+    font-weight: 600;
+}
+
+.widget-context-expanded i{
+    color: #0088cc;
+    margin-right: 5px;
+}
 
 
 

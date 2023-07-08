@@ -104,7 +104,7 @@ include("includes/header.php");
              
             </h3>
 
-            <p>Shop clothes online at the eCom Store and stock up on lots of great deals!
+            <p>Shop poultry online at Tala Poultry Farmers and get lots of great deals!
             </p>
           
           </div><!-- box same-height Finish -->
@@ -129,7 +129,7 @@ include("includes/header.php");
              
             </h3>
 
-            <p>Shop top brands you love at a price you'll love even more.
+            <p>Shop what you love at a price you'll love even more.
             </p>
           
           </div><!-- box same-height Finish -->
@@ -149,12 +149,12 @@ include("includes/header.php");
             <h3>
             
              <a href="#">
-              100% Original 
+              100% Healthy 
              </a>
              
             </h3>
 
-            <p>We have all the quality you need to look good and feel good.
+            <p>Each bird is raised with care and attention, ensuring superior health and taste.
             </p>
           
           </div><!-- box same-height Finish -->
