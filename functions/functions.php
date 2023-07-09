@@ -1,6 +1,8 @@
 <?php
 
-$db = mysqli_connect("localhost","root","","tala");
+$con=mysqli_connect("localhost","tala","123","tala");
+
+$db = $con;
 /// Begin function getRealIpUser ///
 
 function getRealIpUser(){
